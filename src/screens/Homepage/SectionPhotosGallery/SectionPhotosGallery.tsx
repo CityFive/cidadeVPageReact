@@ -1,3 +1,5 @@
+import ButtonPrimary from "../../../components/ButtonPrimary";
+import ButtonSecondary from "../../../components/ButtonSecondary";
 import {
   GalleryItem,
   GalleryList,
@@ -16,13 +18,16 @@ const SectionsPhotosGallery = ({ instagramPosts }: any) => {
         {instagramPosts.map((post: string, i: number) => {
           return (
             <GalleryItem key={i}>
-              <img src={post}  />
+              <img src={post} />
             </GalleryItem>
           );
         })}
       </GalleryList>
+      <ButtonSecondary>Acessar Galeria</ButtonSecondary>
     </SectionGalleryContainer>
   );
 };
 
 export default SectionsPhotosGallery;
+
+// Continuar a partir de colocar imagem e configurar tamanho 
