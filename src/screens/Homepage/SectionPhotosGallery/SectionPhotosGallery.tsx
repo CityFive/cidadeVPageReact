@@ -1,18 +1,19 @@
-import ButtonPrimary from "../../../components/ButtonPrimary";
 import ButtonSecondary from "../../../components/ButtonSecondary";
 import {
   GalleryItem,
   GalleryList,
+  MobileCoverImage,
   SectionGalleryContainer,
-  SectionTextGallery,
+  SectionTextGallery
 } from "./SectionPhotosGallery.styles";
 
 const SectionsPhotosGallery = ({ instagramPosts }: any) => {
   return (
     <SectionGalleryContainer>
+      <MobileCoverImage src={instagramPosts[5]}/>
       <SectionTextGallery>
         <h3>GALERIA DE FOTOS</h3>
-        <h2>Os tesouros da Cidade Cinco</h2>
+        <h2>Os tesouros da <br /> Cidade Cinco</h2>
       </SectionTextGallery>
       <GalleryList>
         {instagramPosts.map((post: string, i: number) => {
@@ -29,5 +30,3 @@ const SectionsPhotosGallery = ({ instagramPosts }: any) => {
 };
 
 export default SectionsPhotosGallery;
-
-// Continuar a partir de colocar imagem e configurar tamanho 
