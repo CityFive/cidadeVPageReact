@@ -11,7 +11,7 @@ const SectionActivities = () => {
     <SectionActivitiesContainer id="atividades">
       <SectionTextActivities>
         <h3>ATIVIDADES</h3>
-        <h2>A vida cristã na Cidade Cinco</h2>
+        <h2>A vida cristã na <br /> Cidade Cinco</h2>
         <p>
           Como seguidores de Cristo, entendemos que estamos a todo momento em
           discipulado e que fomos salvos para prestar culto a Deus. Portanto, o
