@@ -4,14 +4,24 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterContent>
-        <p>
-          Cidade Cinco Igreja Reformada Missional <br /> 34.712.045/0001-00
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur
-          <br /> adipisicing elit Lorem ipsum dolor sit amet consectetur.
-        </p>
-        <p>Contatocidade.cinco@gmail.com</p>
+        <div>
+          <p>
+            <b>Cidade Cinco Igreja Reformada Missional</b> <br />
+            34.712.045/0001-00
+          </p>
+        </div>
+        <div>
+          <p>
+            <b> Lorem ipsum dolor sit amet consectetur </b>
+            <br /> adipisicing elit Lorem ipsum dolor sit amet consectetur.
+          </p>
+        </div>
+        <div>
+          <p>
+            <b>Contato</b>
+            <br /> cidade.cinco@gmail.com
+          </p>
+        </div>
       </FooterContent>
     </FooterContainer>
   );
