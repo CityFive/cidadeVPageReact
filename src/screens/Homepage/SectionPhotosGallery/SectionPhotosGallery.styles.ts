@@ -11,7 +11,6 @@ export const SectionGalleryContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${NeutralColors.lightest};
-  overflow: hidden;
 
   @media ${MediaQueries.Medium} {
     padding-bottom: 168px;
@@ -19,7 +18,7 @@ export const SectionGalleryContainer = styled.div`
     margin-bottom: 0px;
     gap: 64px;
     height: 1420px;
-    background-color: ${BrandColors.colorBrand05};
+    background-color: ${NeutralColors.lightest};
   }
 `;
 export const GalleryList = styled.div`
@@ -38,13 +37,13 @@ export const GalleryItem = styled.div`
   img {
     width: 306px;
     height: 297px;
-    object-fit: cover;
   }
 `;
 export const MobileCoverImage = styled.img`
   width: 100%;
   height: 375px;
   display: block;
+  object-fit: cover;
 
   @media ${MediaQueries.Medium} {
     display: none;

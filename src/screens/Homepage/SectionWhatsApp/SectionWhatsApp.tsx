@@ -1,11 +1,17 @@
 import ButtonTertiary from "../../../components/ButtonTertiary";
-import { Container, SectionWhatsApp } from "./SectionWhatsApp.styles";
+import {
+  ContainerDesktop,
+  ContainerImg,
+  ContainerMobile,
+  SectionWhatsAppDesktop,
+  SectionWhatsAppMobile,
+} from "./SectionWhatsApp.styles";
 
 const SectionSpotifyPlaylist = () => {
   return (
     <>
-      <SectionWhatsApp>
-        <Container>
+      <SectionWhatsAppDesktop>
+        <ContainerDesktop>
           <img
             src="/images/spotify-playlist.png"
             alt="Picture of the author"
@@ -16,13 +22,34 @@ const SectionSpotifyPlaylist = () => {
             <div>
               <h3>GRUPO DE WHATSAPP</h3>
               <h2>
-              Fique por dentro das <br /> novidades da Cidade Cinco
+                Fique por dentro das <br /> novidades da Cidade Cinco
               </h2>
             </div>
-            <ButtonTertiary>Entrar no grupo dde WhatsApp</ButtonTertiary>
+            <ButtonTertiary>Entrar no grupo de WhatsApp</ButtonTertiary>
           </section>
-        </Container>
-      </SectionWhatsApp>
+        </ContainerDesktop>
+      </SectionWhatsAppDesktop>
+      <SectionWhatsAppMobile>
+        <ContainerMobile>
+          <ContainerImg>
+            <img
+              src="/images/spotify-playlist.png"
+              alt="Picture of the author"
+              width={343}
+              height={400}
+            />
+          </ContainerImg>
+          <section>
+            <div>
+              <h3>GRUPO DE WHATSAPP</h3>
+              <h2>
+                Fique por dentro das <br /> novidades da Cidade Cinco
+              </h2>
+            </div>
+            <ButtonTertiary>Entrar no grupo de WhatsApp</ButtonTertiary>
+          </section>
+        </ContainerMobile>
+      </SectionWhatsAppMobile>
     </>
   );
 };
