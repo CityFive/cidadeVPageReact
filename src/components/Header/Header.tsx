@@ -2,19 +2,26 @@ import React, { useState } from "react";
 import { SocialInfo } from "../../api/data";
 import { NeutralColors } from "../../foundation/tokens";
 import Grid from "../Grid";
-import Icon, { Icons } from "../Icons";
 import Typography from "../Typography";
 import {
   ButtonNavLink,
+  ButttonsMenuMobile,
   HamburgerMenu,
   HeaderContainer,
   HeaderIconList,
+  HeaderMobileMenu,
   HeaderNavLink,
   HeaderNavList,
   MobileCloseIcon,
   MobileMenu,
   MobileMenuLink,
 } from "./Header.styles";
+
+import instagramSvg from "../../components/Icons/assets/instagram.svg";
+import burgerSvg from "../../components/Icons/assets/burger.svg";
+import spotifySvg from "../../components/Icons/assets/spotify.svg";
+import youtubeSvg from "../../components/Icons/assets/youtube.svg";
+import { X, XCircle } from "phosphor-react";
 
 interface Props {
   social: SocialInfo;
@@ -26,93 +33,101 @@ const Header: React.FC<Props> = ({ social }) => {
   return (
     <HeaderContainer>
       <Grid.Container>
-        <div>
-          <Typography.Subtitle color={NeutralColors.lightest}>
-            Cidade Cinco
-          </Typography.Subtitle>
-          <HeaderNavList>
-            <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
-            <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
-            <HeaderNavLink href="#atividades">Atividades</HeaderNavLink>
-            <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
-            <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
-            <HeaderIconList>
-              <a href={social.instagramUrl} target="_blank">
-                <Icon
-                  icon={Icons.Instagram}
-                  size="18px"
-                  color={NeutralColors.lightest}
-                />
-              </a>
-              <a href={social.youtubeUrl} target="_blank">
-                <Icon
-                  icon={Icons.Youtube}
-                  size="18px"
-                  color={NeutralColors.lightest}
-                />
-              </a>
-              <a href={social.spotifyUrl} target="_blank">
-                <Icon
-                  icon={Icons.Spotify}
-                  size="18px"
-                  color={NeutralColors.lightest}
-                />
-              </a>
-            </HeaderIconList>
-          </HeaderNavList>
+        <section>
+          <div>
+            <Typography.Subtitle color={NeutralColors.lightest}>
+              Cidade Cinco
+            </Typography.Subtitle>
+          </div>
+          <div>
+            <HeaderNavList>
+              <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
+              <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
+              <HeaderNavLink href="#atividades">Atividades</HeaderNavLink>
+              <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
+              <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
+              <HeaderIconList>
+                <a href={social.instagramUrl} target="_blank">
+                  <img src={instagramSvg} />
+                </a>
+                <a href={social.youtubeUrl} target="_blank">
+                  <img src={youtubeSvg} />
+                </a>
+                <a href={social.spotifyUrl} target="_blank">
+                  <img src={spotifySvg} />
+                </a>
+              </HeaderIconList>
+            </HeaderNavList>
+          </div>
+
           <HamburgerMenu onClick={() => setMenuOpen(!menuOpen)}>
-            <Icon
-              icon={Icons.Burger}
-              size="18px"
-              color={NeutralColors.lightest}
-            />
+            <img src={burgerSvg} />
           </HamburgerMenu>
           {menuOpen && (
             <MobileMenu>
-              <MobileCloseIcon onClick={() => setMenuOpen(false)}>
-                X
-              </MobileCloseIcon>
-
-              <MobileMenuLink>
-                <HeaderNavLink href="#sobre" onClick={() => setMenuOpen(false)}>
-                  Sobre
-                </HeaderNavLink>
-              </MobileMenuLink>
+              <HeaderMobileMenu>
+                <Typography.Subtitle color={NeutralColors.lightest}>
+                  Cidade Cinco
+                </Typography.Subtitle>
+                <MobileCloseIcon onClick={() => setMenuOpen(false)}>
+                  <X size={32} weight="fill" color="white" />
+                </MobileCloseIcon>
+              </HeaderMobileMenu>
               <MobileMenuLink>
                 <HeaderNavLink
                   href="#confissao"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Confissão
+                  Confissão de Fé
                 </HeaderNavLink>
               </MobileMenuLink>
+
               <MobileMenuLink>
-                <HeaderNavLink
-                  href="#seminaristas"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  Seminaristas
+                <HeaderNavLink href="#sobre" onClick={() => setMenuOpen(false)}>
+                  Nossa história
                 </HeaderNavLink>
               </MobileMenuLink>
+
+              <MobileMenuLink>
+                <HeaderNavLink href="#sobre" onClick={() => setMenuOpen(false)}>
+                  Atividades
+                </HeaderNavLink>
+              </MobileMenuLink>
+
               <MobileMenuLink>
                 <HeaderNavLink
                   href="#galeria"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Galeria
+                  Galeria de Fotos
                 </HeaderNavLink>
               </MobileMenuLink>
+
               <MobileMenuLink>
                 <HeaderNavLink
-                  href="#mais-info"
+                  href="#seminaristas"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Mais informações
+                  Equipe pastoral
                 </HeaderNavLink>
               </MobileMenuLink>
+              <ButttonsMenuMobile>
+                <HeaderIconList>
+                  <a href={social.instagramUrl} target="_blank">
+                    <img src={instagramSvg} />
+                  </a>
+                  <a href={social.youtubeUrl} target="_blank">
+                    <img src={youtubeSvg} />
+                  </a>
+                  <a href={social.spotifyUrl} target="_blank">
+                    <img src={spotifySvg} />
+                  </a>
+                </HeaderIconList>
+                <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
+              </ButttonsMenuMobile>
             </MobileMenu>
           )}
-        </div>
+        </section>
       </Grid.Container>
     </HeaderContainer>
   );

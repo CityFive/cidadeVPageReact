@@ -16,7 +16,7 @@ const {instagramPosts, social} = data;
 const Homepage = () => {
   return (
     <>
-      {/* <Header social={social} /> */}
+      <Header social={social} />
       <main>
         <SectionHero />
         <SectionConfessionOfFaith />
