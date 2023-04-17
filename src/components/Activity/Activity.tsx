@@ -13,7 +13,7 @@ const Activity = ({ title, text, buttonContent, id, imageUrl }: ActivityProp) =>
   return (
     <>
       {id % 2 === 0 ? (
-        <CardActivity id={id}>
+        <CardActivity >
           <ContentContainer>
             <div>
               <h3>{title}</h3>
@@ -28,7 +28,7 @@ const Activity = ({ title, text, buttonContent, id, imageUrl }: ActivityProp) =>
           />
         </CardActivity>
       ) : (
-        <CardActivity id={id}>
+        <CardActivity >
           <img
             src={imageUrl}
           />

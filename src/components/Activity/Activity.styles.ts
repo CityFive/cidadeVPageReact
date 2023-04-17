@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { MediaQueries } from "../../foundation/media";
 import { BrandColors, NeutralColors } from "../../foundation/tokens";
 
-export const CardActivity = styled.div<{ id: number }>`
+
+export const CardActivity = styled.div`
   width: 90%;
   height: 260px;
   background-color: ${BrandColors.colorBrand05};
@@ -20,8 +21,6 @@ export const CardActivity = styled.div<{ id: number }>`
     width: 950px;
     height: 400px;
     border-radius: 24px 0px 0px 0px;
-    border-radius: ${(props) =>
-      props.id % 2 === 0 ? "24px 0px 0px 0px" : "0px 24px 0px 0px"};
 
 
     img {
