@@ -36,6 +36,7 @@ export const HeaderMobileMenu = styled.div`
   justify-content: space-between;
   padding: 16px 30px;
 `;
+
 export const ButttonsMenuMobile = styled.div`
   display: flex;
   flex-direction: column;

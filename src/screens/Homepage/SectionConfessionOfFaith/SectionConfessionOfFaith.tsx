@@ -1,29 +1,52 @@
-import ButtonPrimary from "../../../components/ButtonPrimary";
+import { DownloadSimple } from "phosphor-react";
+import ButtonGrey from "../../../components/ButtonsConfession/ButtonPrimary/ButtonGrey copy";
 import {
+  GridContainer,
   SectionConfessionContainer,
   SectionTextConfession,
 } from "./SectionConfessionOfFaith.styles";
+import ButtonBeige from "../../../components/ButtonsConfession/ButtonPrimary/ButtonBeige";
 
 const SectionConfessionOfFaith = () => {
   return (
     <SectionConfessionContainer id="confissao">
       <SectionTextConfession>
-        <h3>CONFISSÃO DE FÉ</h3>
-        <h2>
-          Somos uma igreja cristã <br /> de tradição batista reformada
-        </h2>
+        <h2>Conheça os nossos distintivos de fé </h2>
         <p>
-          Escolhemos o nome Igreja Reformada Missional Cidade Cinco devido à
-          tradição que herdamos.
-          <br />
-          Estamos conectados à Igreja que professa o Credo Apostólico e que
-          labuta na pregação do Evangelho
-          <br />
-          que glorifica unicamente a Cristo e é anunciada pela Escritura
-          Sagrada.
+          Somos uma igreja cristã, batista e reformada fundada na cidade de São
+          Paulo durante a pandemia da COVID-19 em 2021, por meio do trabalho de
+          plantação liderado pelo pastor Fábio Leal e outros irmãos. Nosso
+          objetivo é ecoar a mensagem do evangelho do Reino de Deus, cooperar
+          com outras igrejas na Grande Comissão e ser uma igreja comprometida
+          com os princípios do cristianismo bíblico.
         </p>
       </SectionTextConfession>
-      <ButtonPrimary>Baixar Confissão de Fé</ButtonPrimary>
+      <GridContainer>
+        <ButtonGrey>
+          Confissão Batista de 1689
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonGrey>
+        <ButtonGrey>
+          Declaração de Cambridge
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonGrey>
+        <ButtonGrey>
+          Sínodo de Dort
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonGrey>
+        <ButtonBeige>
+          Credo Apostólico
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonBeige>
+        <ButtonBeige>
+          Credo Niceno
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonBeige>
+        <ButtonBeige>
+          Credo Niceno
+          <DownloadSimple size={20} weight="fill" />
+        </ButtonBeige>
+      </GridContainer>
     </SectionConfessionContainer>
   );
 };

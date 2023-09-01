@@ -20,12 +20,8 @@ const Homepage = () => {
       <main>
         <SectionHero />
         <SectionConfessionOfFaith />
-        <SectionAboutUs />
         <SectionActivities />
-        <SectionsPhotosGallery instagramPosts={instagramPosts} />
-        <SectionWhatsApp />
         <SectionOurPastors />
-        <SectionMedias social={social} />
         <SectionContribution />
       </main>
       <Footer />

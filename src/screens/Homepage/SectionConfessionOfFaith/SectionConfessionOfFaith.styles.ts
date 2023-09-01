@@ -4,7 +4,6 @@ import { NeutralColors } from "../../../foundation/tokens";
 
 export const SectionConfessionContainer = styled.div`
   width: 100%;
-  height: 500px;
   padding-top: 64px;
   padding-bottom: 64px;
   display: flex;
@@ -12,31 +11,23 @@ export const SectionConfessionContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${NeutralColors.lightest};
-  gap: 64px;
+  gap: 40px;
 
   @media ${MediaQueries.Medium} {
   }
 `;
 export const SectionTextConfession = styled.div`
   width: 90%;
-  height: 289px;
   color: ${NeutralColors.darkest};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 25px;
 
-  h3 {
-    padding-top: 0px;
-    font-size: 0.75rem;
-    margin: 0;
-    padding: none;
-    font-family: "Proxima Nova Semibold";
-  }
   h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     font-family: "Proxima Nova Semibold";
   }
@@ -44,7 +35,7 @@ export const SectionTextConfession = styled.div`
     margin: 0;
     font-size: 1rem;
     text-align: center;
-    font-family: "Proxima Nova Semibold";
+    font-family: "Proxima Nova";
     line-height: 150%;
     font-weight: lighter;
   }
@@ -60,5 +51,19 @@ export const SectionTextConfession = styled.div`
     p {
       font-size: 1.125rem;
     }
+  }
+`;
+export const GridContainer = styled.div`
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media ${MediaQueries.Medium} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @media ${MediaQueries.Large} {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 `;
