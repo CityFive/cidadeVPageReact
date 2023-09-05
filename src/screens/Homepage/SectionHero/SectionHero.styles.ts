@@ -29,18 +29,12 @@ export const SectionTextHero = styled.div`
   align-items: center;
   gap: 40px;
 
-  h3 {
-    padding-top: 0px;
-    font-size: 1.125rem;
-    margin: 0;
-    padding: none;
-    font-family: "Proxima Nova Semibold";
-  }
   h2 {
     margin: 0;
     font-size: 2rem;
     text-align: center;
     font-family: "Proxima Nova Semibold";
+    font-weight: 600;
   }
   p {
     margin: 0;
@@ -49,18 +43,22 @@ export const SectionTextHero = styled.div`
     font-family: "Proxima Nova Semibold";
     line-height: 150%;
     font-size: small;
+    font-weight: 600;
   }
 
   @media ${MediaQueries.Medium} {
-    width: 750px;
+    width: 90%;
     height: 289px;
     color: ${NeutralColors.lightest};
 
     h2 {
-      font-size: 5rem;
+      font-size: 4rem;
+      width: 60vw;
     }
     p {
       font-size: 1rem;
+      width: 56vw;
+      font-weight: 600;
     }
   }
 `;

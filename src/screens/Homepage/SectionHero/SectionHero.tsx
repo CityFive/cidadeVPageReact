@@ -5,14 +5,13 @@ const SectionHero = () => {
   return (
     <SectionHeroContainer>
       <SectionTextHero>
-        <h3>BEM-VINDO À CIDADE CINCO!</h3>
         <h2>
-          A boa notícia <br /> ecoando na cidade
+          Bem-vindo à Cidade Cinco! 
         </h2>
         <p>
-          Somos uma comunidade de pessoas que confessam a fé em Jesus Cristo e
-          vivem para proclamar a grande história da redenção na cidade de São
-          Paulo.
+          Somos uma igreja batista reformada no centro de São Paulo.
+          Ficamos felizes com seu interesse em <br/> nos visitar!
+          Abaixo, você encontrará informações que serão úteis no planejamento de sua visita.
         </p>
       </SectionTextHero>
     </SectionHeroContainer>

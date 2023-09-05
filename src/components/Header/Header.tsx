@@ -41,8 +41,8 @@ const Header: React.FC<Props> = ({ social }) => {
           </div>
           <div>
             <HeaderNavList>
-              <HeaderNavLink href="#confissao">Confissão De Fé</HeaderNavLink>
-              <HeaderNavLink href="#sobre">Nossa História</HeaderNavLink>
+              <HeaderNavLink href="#confissao">Informações</HeaderNavLink>
+              <HeaderNavLink href="#sobre">Sobre Nós</HeaderNavLink>
               <HeaderNavLink href="#atividades">Atividades</HeaderNavLink>
               <HeaderNavLink href="#galeria">Equipe Pastoral</HeaderNavLink>
               <ButtonNavLink href="#galeria">Contribuir</ButtonNavLink>
@@ -78,13 +78,13 @@ const Header: React.FC<Props> = ({ social }) => {
                   href="#confissao"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Confissão de Fé
+                  Informações
                 </HeaderNavLink>
               </MobileMenuLink>
 
               <MobileMenuLink>
                 <HeaderNavLink href="#sobre" onClick={() => setMenuOpen(false)}>
-                  Nossa história
+                  Sobre Nós
                 </HeaderNavLink>
               </MobileMenuLink>
 
@@ -99,7 +99,7 @@ const Header: React.FC<Props> = ({ social }) => {
                   href="#galeria"
                   onClick={() => setMenuOpen(false)}
                 >
-                  Galeria de Fotos
+                  Equipe Pastoral
                 </HeaderNavLink>
               </MobileMenuLink>
 
