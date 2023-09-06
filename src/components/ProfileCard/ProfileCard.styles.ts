@@ -3,37 +3,34 @@ import { NeutralColors } from "../../foundation/tokens";
 
 export const CardLayout = styled.div`
   width: 300px;
-  height: 415px;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: ${NeutralColors.lightest};
   color: ${NeutralColors.darkest};
-  border-radius: 12px;
-  padding: 16px;
+  border-radius: 8px;
+  div {
+    height: 30vh;
+  }
   img {
     width: 100%;
-    height: 170px;
-    border-radius: 12px;
+    height: 300px;
     object-fit: cover;
   }
   h2 {
     font-size: 1.25rem;
-    margin: 0;
-    margin-top: 32px;
-  }
-  h3 {
-    font-size: 1.125rem;
-    color: ${NeutralColors.dark};
-    font-weight: 100;
-    margin: 0;
-    margin-top: 8px;
+    padding: 10px 20px;
   }
   p {
     font-size: 1rem;
-    margin: 0;
-
-    margin-top: 16px;
+    padding: 0px 20px;
+    line-height: 27px;
+  }
+  a > img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 `;

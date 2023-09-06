@@ -13,7 +13,6 @@ import {
 } from "./SectionOurPastors.styles";
 
 const pastors = data.churchInfo.pastors;
-const deacons = data.churchInfo.deacons;
 
 const SectionOurPastors = () => {
   return (
@@ -38,29 +37,8 @@ const SectionOurPastors = () => {
                         id={i}
                         imageUrl={pastor.imageUrl}
                         name={pastor.fullName}
-                        title={pastor.title}
                         description={pastor.description}
-                      />
-                    </ExternalStylingProfileCard>
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          </CardsContainer>
-          <h4>Diáconos da Cidade Cinco</h4>
-          <CardsContainer>
-            <Swiper>
-              {deacons.map((deacon, i) => {
-                return (
-                  <SwiperSlide>
-                    <ExternalStylingProfileCard>
-                      <ProfileCard
-                        key={i}
-                        id={i}
-                        imageUrl={deacon.imageUrl}
-                        name={deacon.fullName}
-                        title={deacon.title}
-                        description={deacon.description}
+                        social={pastor.social}
                       />
                     </ExternalStylingProfileCard>
                   </SwiperSlide>
@@ -73,12 +51,11 @@ const SectionOurPastors = () => {
 
       <SectionOurPastorsContainerDesktop id="atividades">
         <SectionTextOurPastors>
-          <h3>EQUIPE PASTORAL</h3>
-          <h2>
-            Somos liderados por <br /> um corpo de presbíteros e diáconos.
-          </h2>
+          <h1>Presbitério da Cidade Cinco</h1>
+          <p>
+            Cremos que o modelo de governo de igreja mais saudável é o que conta com uma pluralidade de   presbíteros. Portanto, somos liderados por quatro pastores que cuidam das diferentes áreas da igreja.
+          </p>
         </SectionTextOurPastors>
-        <h4>Presbitério da Cidade Cinco</h4>
         <CardsContainer>
           {pastors.map((pastor, i) => {
             return (
@@ -87,23 +64,8 @@ const SectionOurPastors = () => {
                 id={i}
                 imageUrl={pastor.imageUrl}
                 name={pastor.fullName}
-                title={pastor.title}
                 description={pastor.description}
-              ></ProfileCard>
-            );
-          })}
-        </CardsContainer>
-        <h4>Diáconos da Cidade Cinco</h4>
-        <CardsContainer>
-          {deacons.map((deacon, i) => {
-            return (
-              <ProfileCard
-                key={i}
-                id={i}
-                imageUrl={deacon.imageUrl}
-                name={deacon.fullName}
-                title={deacon.title}
-                description={deacon.description}
+                social={pastor.social}
               ></ProfileCard>
             );
           })}
