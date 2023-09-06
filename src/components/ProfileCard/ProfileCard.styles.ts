@@ -3,7 +3,7 @@ import { NeutralColors } from "../../foundation/tokens";
 
 export const CardLayout = styled.div`
   width: 300px;
-  height: 65vh;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
