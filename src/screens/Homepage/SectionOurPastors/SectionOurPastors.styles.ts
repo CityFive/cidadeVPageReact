@@ -104,19 +104,21 @@ export const SectionTextOurPastors = styled.div`
   align-items: center;
   gap: 24px;
 
-  h3 {
+  h1 {
     padding-top: 0px;
-    font-size: 0.75rem;
+    font-size: 3rem;
     margin: 0;
     padding: none;
     font-family: "Proxima Nova Semibold";
-    color: ${BrandColors.colorBrand02};
   }
-  h2 {
+
+  p {
+    padding-top: 0px;
+    font-size: 1.2rem;
     margin: 0;
-    font-size: 1.5rem;
-    text-align: center;
+    padding: none;
     font-family: "Proxima Nova Semibold";
+    text-align: center;
   }
 
   @media ${MediaQueries.Medium} {
