@@ -3,14 +3,16 @@ import { NeutralColors } from "../../foundation/tokens";
 
 export const CardLayout = styled.div`
   width: 300px;
-  height: 60vh;
+  height: 65vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: ${NeutralColors.lightest};
   color: ${NeutralColors.darkest};
   border-radius: 8px;
+  div {
+    height: 30vh;
+  }
   img {
     width: 100%;
     height: 300px;
@@ -20,18 +22,15 @@ export const CardLayout = styled.div`
     font-size: 1.25rem;
     padding: 10px 20px;
   }
-  h3 {
-    font-size: 1.125rem;
-    color: ${NeutralColors.dark};
-    font-weight: 100;
-    padding: 0px 20px;
-  }
   p {
     font-size: 1rem;
     padding: 0px 20px;
+    line-height: 27px;
   }
-  a {
+  a > img {
     width: 20px;
     height: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
   }
 `;

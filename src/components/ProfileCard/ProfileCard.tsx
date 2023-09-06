@@ -19,9 +19,11 @@ const ProfileCard = ({ name, description, imageUrl, social }: Props) => {
         <h2>{name}</h2>
         <p>{description}</p>
       </div>
-      <a href={social.instagramUrl} target="_blank">
-        <img src={instagramSvgBlack} alt="logo instagram" />
-      </a>
+      <footer>
+        <a href={social.instagramUrl} target="_blank">
+          <img src={instagramSvgBlack} alt="logo instagram" />
+        </a>
+      </footer>
     </CardLayout>
   );
 };

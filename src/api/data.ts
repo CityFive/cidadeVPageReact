@@ -44,43 +44,43 @@ export const data = {
   churchInfo: {
     pastors: [
       {
-        imageUrl: "/images/fabio.png",
+        imageUrl: "/images/fabio-portrait.png",
         fullName: "Fabio Leal",
         title: "Pastor Titular",
         description:
-          "Casado com a Anielle e pai do Martin. Estuda teologia no Seminário Martin Bucer e já atuou na plantação de duas igrejas locais. É pastor titular da Igreja Cidade Cinco.",
+          "Casado com a Anielle e pai do Martin e do Tiago. Formado em teologia pelo Seminário Martin Bucer. Já atuou na plantação de duas igrejas locais. É o pastor titular da Cidade Cinco.",
         social: {
-          instagramUrl: 'https://instagram.com/user/sergiogns'
+          instagramUrl: 'https://instagram.com/prfabioleal'
         },
       },
       {
-        imageUrl: "/images/matheus.png",
+        imageUrl: "/images/matheus-portrait.png",
         fullName: "Matheus Odilon",
         title: "Presbítero",
         description:
-          "Casado com a Bárbara e pai da Amélia. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
+          "Casado com a Barbara e pai da Amelia. Estuda teologia no Seminário Martin Bucer e trabalha como engenheiro de software.",
         social: {
-          instagramUrl: 'https://instagram.com/user/sergiogns'
+          instagramUrl: 'https://instagram.com/mtsodilon'
         },
       },
       {
-        imageUrl: "/images/sergio.png",
-        fullName: "Sérgio Sousa",
-        title: "Presbítero",
-        description:
-          "Casado com a Camila e pai da Antonella e da Gabriella. Estuda teologia no Seminário Martin Bucer e trabalha como Gerente de Produto. É pastor auxiliar na Cidade Cinco.",
-        social: {
-          instagramUrl: 'https://instagram.com/user/sergiogns'
-        },
-      },
-      {
-        imageUrl: "/images/sergio.png",
+        imageUrl: "/images/luiz-portrait.png",
         fullName: "Luiz Felipe",
         title: "Presbítero",
         description:
-          "Casado com a Kemilly. Estuda teologia no Seminário Martin Bucer e trabalha como Desenvolvedor de Software. É pastor auxiliar na Cidade Cinco.",
+          "Casado com a Kemmily. Estuda teologia no Seminário Martin Bucer e trabalha como engenheiro de software.",
         social: {
-          instagramUrl: 'https://instagram.com/user/sergiogns'
+          instagramUrl: 'https://instagram.com/lffelipee'
+        },
+      },
+      {
+        imageUrl: "/images/sergio-portrait.png",
+        fullName: "Sérgio Sousa",
+        title: "Presbítero",
+        description:
+          "Casado com a Camilla e pai da Antonella e Gabriella. Estuda teologia no Seminário Martin Bucer e trabalha como CEO na HubyParts.",
+        social: {
+          instagramUrl: 'https://instagram.com/sergiogns'
         },
       },
     ] as Pastor[],
